@@ -1,12 +1,24 @@
 header {
-    width: 100%;
-    height: 138px;
-    background-color: var(--background-tertiary-color);
-    padding: 37px 0 0 48px;
+  width: 100%;
+  height: 138px;
+  background-color: var(--background-tertiary-color);
+  padding: 37px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* O display flex serve para organizar os elementos
+de um container em linha, colocando todos os elementos da div lado a lado 
+    Enquanto que o serve para distribuir e alinhar conforme pedido ( */
+
 }
 
 .logo {
-    width: 48px;
-    height: 46px;
+  width: 48px;
+  height: 46px;
 }
 
+nav {
+  display: none;
+}

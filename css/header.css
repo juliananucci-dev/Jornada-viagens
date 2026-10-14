@@ -7,6 +7,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   /* Ativando o flexbox:
     - O display flex ativa o flexbox, servindo para organizar os elementos de um container em linha, colocando todos os elementos da div lado a lado 
@@ -35,6 +36,12 @@ nav {
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding: 0px 48px 24px;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 /* Como o HTML, sozinho, não sabe que você quer mostrar o <nav> quando o checkbox estiver marcado, uma vez que escrevemos para ocultar a nav (display:none), foi preciso usar o css para que quando o checkbox estiver marcado, exiba o <nav> que vem depois dele e que compartilha o mesmo elemento pai. 
@@ -52,3 +59,9 @@ Seleciona os elementos <nav> que são irmãos posteriores daquele checkbox, dent
 
 display: block
 Faz o <nav> ser exibido como um elemento de bloco, desde que outra regra não prevaleça. */
+
+.list-menu li a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--text-secundary-color);
+}

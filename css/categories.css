@@ -69,7 +69,7 @@
 
 .category-card .icone {
     display: block;
-    width: 50px;
+    width: 80px;
     height: 80px;
 }
 
@@ -77,13 +77,5 @@
 .cards-category {
     flex-direction: row;
     flex-wrap: wrap;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-.cards-category {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 700px;
     }
 }

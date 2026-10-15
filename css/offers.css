@@ -5,6 +5,7 @@
 .offers-cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 16px;
   gap: 24px;
@@ -87,7 +88,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 600px;
   }
 }
 
@@ -132,15 +132,15 @@
     height: 308px;
     padding: 24px 0px;
   }
-}
 
 .offers-cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 1400px;
   }
+}
 
 @media screen and (min-width: 1920px) {
     .offers-cards {

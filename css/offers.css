@@ -58,3 +58,20 @@
     font-weight: 700;
     font-size: 20px;
 }
+
+
+@media screen and (min-width: 1024px) {
+    .card {
+    display: flex;
+    width: 588px;
+    height: 308px;
+    padding: 24px 0px;
+    background-image: url(../img/Card\ promos.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+
+    .card-button:hover {
+        background-color: var(--button-primary-color);
+    }
+}

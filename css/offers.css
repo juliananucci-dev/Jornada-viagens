@@ -1,12 +1,20 @@
+.offers {
+    margin-bottom: 88px;
+}
+
 .offers-cards {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   margin: 16px;
+  gap: 24px;
 }
 
 .card {
   box-sizing: border-box;
   color: var(--text-secundary-color);
-  background-image: url(../img/Card\ promos.png);
+  background-size: 100% 100%;
   display: flex;
   width: 312px;
   height: 288px;
@@ -15,6 +23,22 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+
+.card-japao {
+    background-image: url(../img/Card\ promos.png);
+}
+
+.card-sanAndreas {
+    background-image: url(../img/SanAndreas.png);
+}
+
+.card-paraiba {
+    background-image: url(../img/Paraiba.png);
+}
+
+.card-manaus {
+    background-image: url(../img/Manaus.png);
 }
 
 .header-card {
@@ -65,9 +89,6 @@
     width: 588px;
     height: 308px;
     padding: 24px 0px;
-    background-image: url(../img/Card\ promos.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
   }
 
   .card-button:hover {

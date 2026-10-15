@@ -28,6 +28,8 @@ header {
 .logo {
   width: 48px;
   height: 46px;
+  display: block;
+  align-items: center;
 }
 
 nav {
@@ -60,10 +62,35 @@ Seleciona os elementos <nav> que são irmãos posteriores daquele checkbox, dent
 display: block
 Faz o <nav> ser exibido como um elemento de bloco, desde que outra regra não prevaleça. */
 
-.list-menu li a {
-  list-style: none;
+.list-menu ul li a {
   text-decoration: none;
   color: var(--text-secundary-color);
   display: block;
   margin: 16px 0;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+.list-menu ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .list-menu label {
+    display: none;
+  }
+
+  .list-menu nav {
+    display: block;
+  }
+
+  .list-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  /* Se você tentar aplicar o display flex e position column no .list-menu nav para que os itens da lista sejam listados horizontavel, não dará certo, pois o display flex atua somente sobre seus filhos diretos. No caso da nav, o filho direto é a label e input */
+
 }

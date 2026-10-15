@@ -26,6 +26,9 @@
     --text-weight: 400;
     --menu-text-weight: 500;
     --button-weight: 700;
+
+    --font-size-h2: 32px;
+    --font-size-h2-mobile: 20px
 }
 
 h1 {

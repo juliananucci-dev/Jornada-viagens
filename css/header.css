@@ -1,0 +1,115 @@
+header {
+  width: 100%;
+  height: 138px;
+  background-color: var(--background-tertiary-color);
+  padding: 37px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  /* Ativando o flexbox:
+    - O display flex ativa o flexbox, servindo para organizar os elementos de um container em linha, colocando todos os elementos da div lado a lado 
+    - flex-direction: Define a direção dos elementos, podendo ser: row (esq->dir), row-reverse (dir->esq), column (cima->baixo), column reverse, no wrap (todos os itens ficam em uma só linha), wrap (itens vão quebrar em múltipas linhas e wrap reverse (itens quebram de baixo pra cima)
+    - justify-content: distribui os elementos ao longo do eixo principal
+    - align-content (quando as múltiplas linhas existir): alinha as linhas
+    - align-items: alinha os elementos no eixo transversal, ou seja, no eixo perpendicular ao principal. 
+    - order: define a ordem visual dos itens, sem alterar o HTML
+    - flex-grow / flex-shrink: quanto um item pode crescer/encolher para ocupar espaço
+    - align-self: sobrescreve o alinhamento transversal do item individual
+    - flex-basis
+    https://www.origamid.com/projetos/flexbox-guia-completo/
+    */
+
+
+}
+
+.logo-mobile {
+  width: 48px;
+  height: 46px;
+  display: block;
+  align-items: center;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding: 0px 48px 24px;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
+}
+
+/* Como o HTML, sozinho, não sabe que você quer mostrar o <nav> quando o checkbox estiver marcado, uma vez que escrevemos para ocultar a nav (display:none), foi preciso usar o css para que quando o checkbox estiver marcado, exiba o <nav> que vem depois dele e que compartilha o mesmo elemento pai. 
+
+Semântica:
+
+input[type="checkbox"]
+Seleciona um elemento input cujo tipo é checkbox.
+
+:checked
+Seleciona o checkbox quando ele está marcado.
+
+~ nav
+Seleciona os elementos <nav> que são irmãos posteriores daquele checkbox, dentro do mesmo elemento pai. Ou seja o seletor ~ não seleciona qualquer <nav> da página: ele considera os irmãos posteriores do checkbox.
+
+display: block
+Faz o <nav> ser exibido como um elemento de bloco, desde que outra regra não prevaleça. */
+
+.list-menu ul li a {
+  text-decoration: none;
+  color: var(--text-secundary-color);
+  display: block;
+  margin: 16px 0;
+  font-weight: var(--menu-text-weight);
+  font-size: 16px;
+}
+
+.list-menu ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .list-menu label {
+    display: none;
+  }
+
+  .list-menu nav {
+    display: block;
+  }
+
+  .list-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+  /* Se você tentar aplicar o display flex e position column no .list-menu nav para que os itens da lista sejam listados horizontavel, não dará certo, pois o display flex atua somente sobre seus filhos diretos. No caso da nav, o filho direto é a label e input */
+
+@media screen and (min-width: 1024px) {
+  .logo-desktop {
+    display: block;
+    width: 170px;
+    height: 64px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .list-menu a:hover {
+    color: var(--button-primary-color);
+  }
+}

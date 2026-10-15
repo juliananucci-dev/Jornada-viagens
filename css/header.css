@@ -64,4 +64,6 @@ Faz o <nav> ser exibido como um elemento de bloco, desde que outra regra não pr
   list-style: none;
   text-decoration: none;
   color: var(--text-secundary-color);
+  display: block;
+  margin: 16px 0;
 }

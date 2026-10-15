@@ -34,3 +34,6 @@ h1 {
     color: var(--text-primary-color);
 }
 
+body { 
+    font-family: "Montserrat";
+}

@@ -25,11 +25,15 @@ header {
 
 }
 
-.logo {
+.logo-mobile {
   width: 48px;
   height: 46px;
   display: block;
   align-items: center;
+}
+
+.logo-desktop {
+  display: none;
 }
 
 nav {
@@ -68,7 +72,7 @@ Faz o <nav> ser exibido como um elemento de bloco, desde que outra regra não pr
   display: block;
   margin: 16px 0;
   font-weight: var(--menu-text-weight);
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .list-menu ul {
@@ -90,7 +94,22 @@ Faz o <nav> ser exibido como um elemento de bloco, desde que outra regra não pr
     align-items: center;
     gap: 24px;
   }
+}
 
   /* Se você tentar aplicar o display flex e position column no .list-menu nav para que os itens da lista sejam listados horizontavel, não dará certo, pois o display flex atua somente sobre seus filhos diretos. No caso da nav, o filho direto é a label e input */
 
+@media screen and (min-width: 1024px) {
+  .logo-desktop {
+    display: block;
+    width: 170px;
+    height: 64px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .list-menu a:hover {
+    color: var(--button-primary-color);
+  }
 }

@@ -32,5 +32,17 @@
 @media screen and (min-width: 1024px) {
     .cards-destiny {
         flex-direction: row;
+        justify-content: center;
+    }
+    .destiny {
+    margin: 60px;
+    }
+
+    .tokyo {
+    width: 588px;
+    }
+
+    .osaka {
+    width: 588px;
     }
 }

@@ -80,3 +80,11 @@
     flex-wrap: wrap;
     }
 }
+
+@media screen and (min-width: 1024px) {
+.cards-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 900px;
+    }
+}

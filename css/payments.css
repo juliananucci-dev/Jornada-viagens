@@ -1,0 +1,32 @@
+.payments {
+  margin: 24px;
+}
+
+.bloco-pagamento {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.galeria-imagens-home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .bloco-pagamento header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bloco-pagamento {
+    display: flex;
+    flex-direction: row;
+  }
+  .galeria-imagens-home {
+    display: flex;
+    width: 650px;
+  }
+}

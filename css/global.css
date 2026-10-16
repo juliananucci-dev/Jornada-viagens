@@ -41,6 +41,10 @@ body {
     font-family: "Montserrat";
 }
 
+.section {
+    margin: 16px
+}
+
 .section-title {
     display: flex;
     justify-content: center;

@@ -1,5 +1,6 @@
 .offers {
   margin-bottom: 88px;
+  margin: 24px;
 }
 
 .offers-cards {
@@ -7,8 +8,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px;
   gap: 24px;
+  margin-bottom: 88px;
 }
 
 .offers-cards .card {
@@ -16,7 +17,8 @@
   color: var(--text-secundary-color);
   background-size: 100% 100%;
   display: flex;
-  width: 312px;
+  width: 100%;
+  max-width: 588px;
   height: 288px;
   padding: 24px 16px 16px;
   flex-direction: column;

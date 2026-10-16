@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+    margin-bottom: 104px;
 }
 
 .category {
@@ -77,5 +78,13 @@
 .cards-category {
     flex-direction: row;
     flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+.cards-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 900px;
     }
 }

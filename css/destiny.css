@@ -1,0 +1,48 @@
+.destiny {
+    margin: 24px;
+}
+
+.cards-destiny {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cards-destiny .card-button {
+    width: 100%;
+}
+
+.tokyo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.osaka {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.destiny img {
+    height: 360px;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cards-destiny {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .destiny {
+    margin: 60px;
+    }
+
+    .tokyo {
+    width: 588px;
+    }
+
+    .osaka {
+    width: 588px;
+    }
+}

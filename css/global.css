@@ -23,12 +23,17 @@
     --text-secundary-color:#fff;
 
     --titles-weight: 700;
-    --text-weight: 400;
+    --text-weight-primary: 400;
+    --text-weight-secundary: 300;
     --menu-text-weight: 500;
     --button-weight: 700;
 
     --font-size-h2: 32px;
-    --font-size-h2-mobile: 32px
+    --font-size-h2-mobile: 32px;
+
+    --font-size-p-primary: 20px;
+    --font-size-p-secundary: 16px;
+
 }
 
 h1 {

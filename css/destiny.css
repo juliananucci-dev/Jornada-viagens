@@ -1,5 +1,4 @@
 .destiny {
-    margin: 24px;
     margin-bottom: 88px;
 }
 
@@ -34,9 +33,22 @@
     .cards-destiny {
         flex-direction: row;
         justify-content: center;
+
     }
-    .destiny {
-    margin: 60px;
+
+    .tokyo {
+    width: 380px;
+    }
+
+    .osaka {
+    width: 380px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cards-destiny {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .tokyo {

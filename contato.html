@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Símbolo_black 1.svg">
+    <title>Jornada Viagens</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+ <!--Header-->
+    <header class="header-main">
+      <a class="a-logo" href="index.html" title="voltar para a página inicial">
+        <img class="logo-mobile" src="img/Logo-provisória-branca 1.png" alt="Bussola do logo Jornada Viagens na cor branca">
+        <img class="logo-desktop" src="img/Logo-provisória-branca 1.svg" alt="Bussola do logo Jornada Viagens na cor branca">
+      </a>
+      <div class="list-menu">
+        <label for="menu">
+          <img class="menu" src="img/menu.svg" alt="menu">
+        </label>
+        <input type="checkbox" id="menu" hidden>
+          <nav>
+            <ul>
+              <li><a href="blog.html" title="acessar blog" target="_blank">Blog</a></li>
+              <li><a href="pacotes.html" title="acessar pacotes de viagens" target="_blank">Pacotes de viagens</a></li>
+              <li><a href="contato.html" title="acessar contato" target="_blank">Contato</a></li>
+            </ul>
+          </nav>
+          <!--a tag <nav> é usada para criar uma área de navegação do site, ou seja, uma região que reúne links para ajudar o usuário a se movimentar entre páginas ou seções.-->
+      </div>
+      <!-- a tag div é um container genérico usado para agrupar elementos HTML. -->
+    </header>
+
+<!--Hero-->
+    <section class="hero-contato">
+    <div class="hero-img-contato">
+      <!--Precisamos colocar a imagem como uma div e nao como uma tag <img>, para podermos usar os atributos background image, no repeat e cover lá no css-->
+        <div class="container-hero">
+            <div class="section-title">
+                <h2>Entre em contato!</h2>
+                <hr>
+            </div>
+            <p>Dúvidas, sugestões, problemas para resolver? Temos uma equipe de plantão para ajudar você!</p>
+        </div>
+    </div>
+    </section>
+    
+<!--Main-->
+    <main>
+    <section>
+    <div class="titulo-desc-contato">
+        <div class="section-title">
+            <h2>Preencha o formulário:</h2>
+            <hr>
+        </div>
+        <p>Temos uma equipe sempre em prontidão para resolver suas dúvidas, problemas, trazer dicas e orientações objetivas para tornar sua experiência o mais prazerosa e tranquila possível. Preencha seus dados que vamos retornar seu contato conforme a urgência do seu chamado. Pode confiar!</p>
+        <form action="#" method="get">
+            <!--Nome-->
+            <div class="input-contato">
+            <label for="name">Seu nome</label>
+            <input type="text" name="Nome" id="name">
+            </div>
+            <!--Telefone-->
+            <div class="input-contato">
+            <label for="phoneNumber">Telefone</label>
+            <input type="tel" name="Numero" id="phoneNumber" pattern="[0-9]{11}" title="Até 11 números">
+            </div>
+            <!--Email-->
+            <div class="input-contato">
+            <label for="email">Email</label>
+            <input type="email" name="userEmail" id="email">
+            </div>
+            <!--Assunto-->
+            <div class="input-contato">
+            <label for="emailTitle">Assunto</label>
+            <input type="text" name="userEmailTitle" id="emailTitle">
+            </div>
+            <!--Mensagem-->
+            <label for="message">Mensagem</label>
+            <textarea name="userMessage" id="message"></textarea>
+        </form>
+        <button class="card-button" type="submit">Enviar</button>
+      </div>
+      </div>
+    </section>
+</main>
+</body>
+</html>

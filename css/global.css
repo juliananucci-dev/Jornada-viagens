@@ -105,3 +105,8 @@ h4 {
 h5 {
     font-size: 28px;
 }
+
+h6 {
+    font-size: 20px;
+    font-weight: 700;
+}

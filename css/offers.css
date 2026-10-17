@@ -1,6 +1,5 @@
 .offers {
   margin-bottom: 88px;
-  margin: 24px;
 }
 
 .offers-cards {
@@ -71,12 +70,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    width: 100%;
   }
 
   .offers-cards .card {
     display: flex;
-    width: 440px;
+    flex-wrap: wrap;
+    width: 380px;
     height: 308px;
     padding: 24px 0px;
   }
@@ -112,7 +112,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 1400px;
+    width: 100%;
   }
 }
 

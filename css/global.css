@@ -41,6 +41,24 @@ body {
     font-family: "Montserrat";
 }
 
+main {
+    margin: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    main { 
+    margin: 60px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    main { 
+    margin: 120px;
+}
+}
+
+
+
 .section {
     margin: 16px
 }
@@ -55,7 +73,7 @@ body {
 }
 
 .section-title h2 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: var(--titles-weight);
     margin: 0;
     color: var(--text-primary-color);
@@ -105,3 +123,9 @@ h4 {
 h5 {
     font-size: 28px;
 }
+
+h6 {
+    font-size: 20px;
+    font-weight: 700;
+}
+

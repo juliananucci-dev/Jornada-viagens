@@ -7,9 +7,7 @@
 }
 
 h2 {
-    padding: 0px 24px;
-    margin-top: 88px;
-    margin-bottom: 88px;
+    margin: 88px 24px;
     font-weight: var(--text-weight);
     font-size: var(--font-size-h2-mobile);
     text-align: center;
